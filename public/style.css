@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300;700&display=swap');
+
+:root{
+
+    /* primary */
+    --color100:#ffffff;
+    --color200:#EEEEEE;
+    --color400:#00ADB5;
+    --color600:#393E46;
+    --color800:#222831;
+    --color900:#000000;
+
+    --font100:'Lora', serif;
+    --font200:'Open Sans', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    background-color: rgb(230, 230, 230);
+}
+
+#header{
+    display:flex;
+    position: fixed;
+    top:0;
+    width:100vw;
+    background-color:var(--color800);
+    padding:0.5vh 5vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction:row;
+    position: fixed;
+    right:0;
+}
+
+.menu li{
+    margin-right:3vw;
+    padding:1vh 0;
+    list-style: none;
+}
+
+.menu li a{
+    text-decoration: none;
+    color:rgb(184, 184, 184);
+    padding:5px;
+}
+
+.menu a:hover{
+    background-color: var(--color200);
+    color:var(--color600);
+}
+
+form{
+    padding-top:20vh;
+    text-align: center;
+    font-size:2vw;
+    font-family:var(--font100);
+    font-weight:400;
+}
+
+input{
+    width:30%;
+    text-align: center;
+    cursor: pointer;
+}
+
+input[type="email"]{
+    color:var(--color100);
+    height:25px;
+}
+
+input[type="submit"]{
+    background-color:var(--color600);
+    color:var(--color100);
+    height:30px;
+}
+
+input[type="submit"]:hover{
+    background-color:var(--color400);
+}
+
+#features{
+    justify-content:center;
+    align-items: center;
+    width:50%;
+    margin:0 auto;
+    padding:30px 0;
+    font-family: var(--font200);
+}
+
+.item {
+    display:flex;
+    flex-direction:row;
+    padding:5vh 0vw;
+}
+
+.icons i{
+    color:var(--color400);
+    text-shadow: 2px 2px black;
+}
+
+.description{
+    margin-left:5vw;
+    color:var(--color600);
+}
+
+.description p{
+    color:var(--color900);
+}
+
+.gray{
+    background-color: var(--color800);
+    padding:30px;
+    display:flex;
+    justify-content: center;
+}
+
+.cards{
+    display:flex;
+    justify-content: space-between;
+    padding:15vh 10vw;
+}
+
+.card{ 
+    background-color: white;
+    box-shadow: 0 4px 8px 0 var(--color900);
+    text-align: center;
+    height:auto;
+    padding:0 5vw 5vh 5vw;
+
+}
+
+.card h3{ 
+    font-size:2vw;
+    padding-top:2vh;
+}
+
+.card h2{
+    padding:2vh 0;
+    font-size:4vw;
+}
+
+.card p{
+    color:var(--color600);
+}
+
+#select{
+    background-color: var(--color600);
+    color:var(--color100);
+    text-decoration: none;
+    padding:10px 30px;
+    font-size:3vw; 
+}
+
+
+#select:hover{
+    background-color: var(--color800);
+    color:var(--color400);
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 var(--color900);
+}
+
+footer{
+    text-align: center;
+    color:var(--color600);
+    padding-bottom:20px;
+}
+
+.foot-menu { 
+    display: flex;
+    justify-content: center;
+}
+
+.foot-menu li{
+    margin:0 3vw;
+    padding:1vh 0;
+    list-style: none;
+}
+
+.foot-menu a{
+    text-decoration: none;
+    color:var(--color600);
+}
+
+@media screen and (max-width:1200px){
+
+}
+
+
+@media screen and (max-width:800px){
+
+    form{
+        font-size: 4vw;
+    }
+
+    input{
+        width:60%;
+    }
+
+    input[type="email"]{
+        height:50px;
+    }
+
+    input[type="submit"]{
+        height:50px;
+    }
+
+    .cards{
+        flex-direction:column;
+        height: auto;
+    }
+
+
+    .card{
+        padding:20px;
+        display: flex;
+        height:250px;
+        width:80%;
+        margin:0 auto;
+        margin-bottom:10vh;
+    }
+
+    .card h3{
+        font-size:4vw;
+        margin-bottom:5vh;
+    }
+
+    .card h2{
+        font-size: 10vh;
+    }
+
+    .card p{
+        font-size:4vw;
+        padding-left:2vw;
+    }
+    
+    #select{
+        padding:20px 60px;
+    }
+
+    #features{
+        width:80%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+
+    form{
+        font-size: 8vw;
+    }
+
+    input{
+        width:80%;
+    }
+
+    input[type="email"]{
+        margin-top:20px;
+        height:50px;
+    }
+
+    input[type="submit"]{
+        height:50px;
+    }
+
+
+    .card{
+        padding:20px;
+        display: flex;
+        flex-direction:column;
+        height:400px;
+        width:90%;
+        margin-bottom:5vh;
+    }
+
+    .card h3{
+        font-size:6vw;
+        margin-bottom:2vh;
+    }
+
+
+    .card p{
+        font-size:3vw;
+        padding-left:2vw;
+    }
+    
+    #select{
+        padding:20px 80px;
+    }
+
+    #features{
+        width:80%;
+    }
+}
+
